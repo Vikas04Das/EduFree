@@ -176,31 +176,37 @@ body {
   transform: scale(1.1);
 }
 
+/* 🔥 Donation Alert Styles */
 .donation-alert {
   font-size: 15px;
   font-weight: 700;
-  color: #000000;
+  color: #000;                     /* Black text for contrast */
   padding: 10px;
   text-align: center;
   margin-bottom: 15px;
-  animation: fadeIn 1s ease-in-out;
+  border-radius: 5px;              /* Smooth corners */
+  animation: fadeIn 1s ease-in-out;/* Smooth fade-in effect */
 }
 
+/* ✨ Donate Link Styles */
 .donate-link {
-  background-color: #000;
-  color: #ffd700;
+  background-color: #000000;       /* Eye-catching red background */
+  color: #ffd700;                  /* Gold text for premium feel */
   font-weight: bold;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 2px solid #ffd700;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;           /* Remove underline */
+  padding: 5px 12px;               /* Balanced padding for button feel */
+  border: 2px solid #ffd700;       /* Gold border for contrast */
+  border-radius: 5px;              /* Smooth corners */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth effects */
 }
 
 .donate-link:hover {
-  background-color: #ffd700;
-  color: #000;
+  background-color: #ffd700;       /* Gold on hover for emphasis */
+  color: #000;                     /* Black text on hover for readability */
+  transform: scale(1.05);          /* Slight zoom on hover for interactivity */
 }
+
+
 
 @keyframes fadeIn {
   from {
@@ -714,17 +720,21 @@ body {
   padding: 10px;
 }
 
+
 .qr-code {
-  width: 100px; 
-  height: 100px;
-  margin: 5px 0;
-  border: 2px solid #ffd700;
-  border-radius: 10px;
-  transition: transform 0.3s;
+  width: 120px;               /* Optimized size for visibility */
+  height: 120px;              /* Consistent height and width */
+  margin: 10px 0;             /* Spacing above and below */
+  border: 2px solid #ffd700;  /* Golden border for a premium look */
+  border-radius: 12px;        /* Smooth rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .qr-code:hover {
-  transform: scale(1.1);
+  transform: scale(1.1);          /* Zoom effect on hover */
+  cursor: pointer;                /* Pointer cursor on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 
@@ -810,5 +820,6 @@ body {
 
   .logo-text {
     font-size: 20px;
+    padding: 15px;
   }
 }
